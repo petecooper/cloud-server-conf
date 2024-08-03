@@ -1,0 +1,2 @@
+[global]
+include=/etc/php/8.2/etc/php-fpm.d/*.conf

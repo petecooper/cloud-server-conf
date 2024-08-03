@@ -1,0 +1,7 @@
+[global]
+pid = /run/php-fpm82.pid
+emergency_restart_threshold = 10
+emergency_restart_interval = 1m
+process_control_timeout = 10s
+include=/etc/php/8.2/etc/php-fpm.d/*.conf
+php_admin_value[disable_functions] = exec,passthru,shell_exec,system
