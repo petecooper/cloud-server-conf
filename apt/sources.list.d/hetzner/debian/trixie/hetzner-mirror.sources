@@ -1,0 +1,6 @@
+X-Repolib-Name: hetzner-mirror
+Types: deb
+URIs: http://mirror.hetzner.com/debian/packages
+Suites: trixie trixie-updates trixie-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg

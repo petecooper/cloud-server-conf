@@ -1,0 +1,6 @@
+X-Repolib-Name: hetzner-security-mirror
+Types: deb
+URIs: http://mirror.hetzner.com/debian/security
+Suites: trixie-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
