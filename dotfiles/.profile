@@ -14,7 +14,7 @@ fi
 
 if [ -f "$HOME/.sysadmin-scripts-installed" ] ; then
     rm -rf $HOME/__/
-    rm -rf $HOME/sysadmin-scripts
+    rm -rf $HOME/sysadmin-scripts/
     mkdir -p $HOME/__/
     git clone --depth 1 https://github.com/petecooper/sysadmin-scripts.git $HOME/sysadmin-scripts/ &> /dev/null
     mv $HOME/sysadmin-scripts/__/*.sh $HOME/__/
