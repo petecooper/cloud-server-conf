@@ -13,13 +13,13 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 if [ -f "$HOME/.sysadmin-scripts-installed" ] ; then
-    rm -rf $HOME/__/ \
-    && rm -rf $HOME/sysadmin-scripts \
-    && mkdir -p $HOME/__/ \
-    && git clone --depth 1 https://github.com/petecooper/sysadmin-scripts.git $HOME/sysadmin-scripts/ &> /dev/null \
-    && mv $HOME/sysadmin-scripts/__/*.sh $HOME/__/ \
-    && rm -rf $HOME/sysadmin-scripts \
-    && echo -e '`sysadmin-scripts` updated.'
+    rm -rf $HOME/__/
+    rm -rf $HOME/sysadmin-scripts
+    mkdir -p $HOME/__/
+    git clone --depth 1 https://github.com/petecooper/sysadmin-scripts.git $HOME/sysadmin-scripts/ &> /dev/null
+    mv $HOME/sysadmin-scripts/__/*.sh $HOME/__/
+    rm -rf $HOME/sysadmin-scripts
+    echo -e '`sysadmin-scripts` updated.'
 fi
 
 if [ -f "/usr/bin/free" ] ; then
